@@ -3,6 +3,8 @@
 Dieses Repository enthält das Grundgerüst einer LLM-Chat-Anwendung basierend auf [Chainlit](https://github.com/Chainlit/chainlit).
 Deine Aufgabe ist es, innerhalb der gegebenen Zeit die coolste Anwendung zu bauen.
 
+## Colab
+Falls du lokal keine Python-Installation hast, kannst du das [hier](https://colab.research.google.com/drive/1lTHXzEa7o7hPqyUXvYVkyADaV1AR4zg8?usp=sharing) hinterlegte Notebook nutzen.
 
 ## Installieren
 
