@@ -1,0 +1,6 @@
+pypdf==3.8.1
+tiktoken==0.3.3
+langchain
+chainlit
+chromadb
+llama_index
