@@ -29,10 +29,18 @@ def process_file(file: AskFileResponse) -> List[Document]:
         return docs
 
 
+from llama_index import download_loader
+
+DadJokesReader = download_loader("DadJokesReader")
+
+loader = DadJokesReader()
+
+
 # Convert document into Chroma vector database
 # Hint: Use cl.AskFileMessage() to ask for a file input
 def get_docsearch(file: AskFileResponse) -> Chroma:
-    docs = process_file(file)
+    # docs = process_file(file)
+    docs = loader.load_data()
     # Save data in the user session
     cl.user_session.set("docs", docs)
     docsearch = Chroma.from_documents(
